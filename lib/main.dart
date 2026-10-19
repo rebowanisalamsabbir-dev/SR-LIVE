@@ -1,5 +1,5 @@
-importage:flutter/material.dart';
-importimportage:zego_uzego_prebuilt_live_audio_room/zego_uikit_prebuilt_live_audio_room.dart';
+import 'package:flutter/material.dart';
+import 'package:zego_uikit_prebuilt_live_audio_room/zego_uikit_prebuilt_live_audio_room.dart';
 
 void main() {
   runApp(const SRLiveApp());
@@ -25,8 +25,10 @@ class VoiceRoomLoginScreen extends StatefulWidget {
 }
 
 class _VoiceRoomLoginScreenState extends State<VoiceRoomLoginScreen> {
-  final userIdController = TextEditingController(text: 'user_${DateTime.now().millisecondsSinceEpoch.remainder(10000)}');
-  final userNameController = TextEditingController(text: 'User_${DateTime.now().millisecondsSinceEpoch.remainder(10000)}');
+  final userIdController = TextEditingController(
+      text: 'user_${DateTime.now().millisecondsSinceEpoch.remainder(10000)}');
+  final userNameController = TextEditingController(
+      text: 'User_${DateTime.now().millisecondsSinceEpoch.remainder(10000)}');
   final roomIdController = TextEditingController(text: 'sr_live_room_101');
 
   @override
@@ -90,7 +92,8 @@ class _VoiceRoomLoginScreenState extends State<VoiceRoomLoginScreen> {
                   ),
                 );
               },
-              child: const Text('ভয়েস রুমে প্রবেশ করুন (Join Room)', style: TextStyle(fontSize: 18)),
+              child: const Text('ভয়েস রুমে প্রবেশ করুন (Join Room)',
+                  style: TextStyle(fontSize: 18)),
             ),
           ],
         ),
