@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+IoomIrimport 'package:flutter/material.dart';
 import 'package:zego_uikit_prebuilt_live_audio_room/zego_uikit_prebuilt_live_audio_room.dart';
 
 void main() {
@@ -113,9 +113,8 @@ class LivePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // এখানে আপনার ZEGOCLOUD AppID এবং AppSign বসাতে হবে
-    const int appID = 354674722; // এটি টেম্পোরারি বা টেস্ট আইডি, প্রয়োজনে আপনার রিয়েল আইডি দিতে পারেন
-    const String appSign = "আপনার_zego_app_sign_এখানে_দিন";
+    const int appID = 354674722;
+    const String appSign = "your_app_sign_here";
 
     return SafeArea(
       child: ZegoUIKitPrebuiltLiveAudioRoom(
