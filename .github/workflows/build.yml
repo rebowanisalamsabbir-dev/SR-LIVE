@@ -23,9 +23,8 @@ jobs:
           flutter-version: '3.19.0'
           channel: 'stable'
 
-      - name: Create Flutter Project Structure
-        run: |
-          flutter create --org com.example . --platforms=android
+      - name: Create Flutter Base Project
+        run: flutter create . --org com.example
 
       - name: Install Dependencies
         run: flutter pub get
